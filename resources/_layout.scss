@@ -1,0 +1,13 @@
+@mixin grid-container($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+.navbar {
+  @include grid-container(12);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
